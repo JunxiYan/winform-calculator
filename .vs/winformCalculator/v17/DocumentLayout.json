@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\junxi\\source\\repos\\winform-calculator\\winformCalculator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A600659C-46B6-4F31-B681-530F482BC15D}|winformCalculator.GUI\\winformCalculator.GUI.csproj|c:\\users\\junxi\\source\\repos\\winform-calculator\\winformcalculator\\winformcalculator.gui\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A600659C-46B6-4F31-B681-530F482BC15D}|winformCalculator.GUI\\winformCalculator.GUI.csproj|solutionrelative:winformcalculator.gui\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\junxi\\source\\repos\\winform-calculator\\winformCalculator\\winformCalculator.GUI\\Form.cs",
+              "RelativeDocumentMoniker": "winformCalculator.GUI\\Form.cs",
+              "ToolTip": "C:\\Users\\junxi\\source\\repos\\winform-calculator\\winformCalculator\\winformCalculator.GUI\\Form.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "winformCalculator.GUI\\Form.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:29:12.657Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

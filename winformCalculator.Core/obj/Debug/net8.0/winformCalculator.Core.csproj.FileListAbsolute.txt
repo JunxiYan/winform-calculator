@@ -1,0 +1,11 @@
+C:\Users\junxi\source\repos\winformCalculator\winformCalculator.Core\bin\Debug\net8.0\winformCalculator.Core.deps.json
+C:\Users\junxi\source\repos\winformCalculator\winformCalculator.Core\bin\Debug\net8.0\winformCalculator.Core.dll
+C:\Users\junxi\source\repos\winformCalculator\winformCalculator.Core\bin\Debug\net8.0\winformCalculator.Core.pdb
+C:\Users\junxi\source\repos\winformCalculator\winformCalculator.Core\obj\Debug\net8.0\winformCalculator.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\junxi\source\repos\winformCalculator\winformCalculator.Core\obj\Debug\net8.0\winformCalculator.Core.AssemblyInfoInputs.cache
+C:\Users\junxi\source\repos\winformCalculator\winformCalculator.Core\obj\Debug\net8.0\winformCalculator.Core.AssemblyInfo.cs
+C:\Users\junxi\source\repos\winformCalculator\winformCalculator.Core\obj\Debug\net8.0\winformCalculator.Core.csproj.CoreCompileInputs.cache
+C:\Users\junxi\source\repos\winformCalculator\winformCalculator.Core\obj\Debug\net8.0\winformCalculator.Core.dll
+C:\Users\junxi\source\repos\winformCalculator\winformCalculator.Core\obj\Debug\net8.0\refint\winformCalculator.Core.dll
+C:\Users\junxi\source\repos\winformCalculator\winformCalculator.Core\obj\Debug\net8.0\winformCalculator.Core.pdb
+C:\Users\junxi\source\repos\winformCalculator\winformCalculator.Core\obj\Debug\net8.0\ref\winformCalculator.Core.dll
