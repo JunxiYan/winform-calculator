@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = winformCalculator.Core
-build_property.ProjectDir = C:\Users\junxi\source\repos\winform-calculator\winformCalculator\winformCalculator.Core\
+build_property.ProjectDir = D:\Code\winform-calculator\winformCalculator.Core\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

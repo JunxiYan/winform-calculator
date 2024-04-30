@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("winformCalculator.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d45babd0816d5a81567483bbabb805b269296e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("winformCalculator.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("winformCalculator.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

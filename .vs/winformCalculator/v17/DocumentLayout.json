@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\junxi\\source\\repos\\winform-calculator\\winformCalculator\\",
+  "WorkspaceRootPath": "D:\\Code\\winform-calculator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A600659C-46B6-4F31-B681-530F482BC15D}|winformCalculator.GUI\\winformCalculator.GUI.csproj|c:\\users\\junxi\\source\\repos\\winform-calculator\\winformcalculator\\winformcalculator.gui\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A600659C-46B6-4F31-B681-530F482BC15D}|winformCalculator.GUI\\winformCalculator.GUI.csproj|d:\\code\\winform-calculator\\winformcalculator.gui\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A600659C-46B6-4F31-B681-530F482BC15D}|winformCalculator.GUI\\winformCalculator.GUI.csproj|solutionrelative:winformcalculator.gui\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A600659C-46B6-4F31-B681-530F482BC15D}|winformCalculator.GUI\\winformCalculator.GUI.csproj|d:\\code\\winform-calculator\\winformcalculator.gui\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A600659C-46B6-4F31-B681-530F482BC15D}|winformCalculator.GUI\\winformCalculator.GUI.csproj|solutionrelative:winformcalculator.gui\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A600659C-46B6-4F31-B681-530F482BC15D}|winformCalculator.GUI\\winformCalculator.GUI.csproj|d:\\code\\winform-calculator\\winformcalculator.gui\\form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A600659C-46B6-4F31-B681-530F482BC15D}|winformCalculator.GUI\\winformCalculator.GUI.csproj|solutionrelative:winformcalculator.gui\\form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,15 +22,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form.Designer.cs",
+              "DocumentMoniker": "D:\\Code\\winform-calculator\\winformCalculator.GUI\\Form.Designer.cs",
+              "RelativeDocumentMoniker": "winformCalculator.GUI\\Form.Designer.cs",
+              "ToolTip": "D:\\Code\\winform-calculator\\winformCalculator.GUI\\Form.Designer.cs",
+              "RelativeToolTip": "winformCalculator.GUI\\Form.Designer.cs",
+              "ViewState": "AQIAALUAAAAAAAAAAAAmwLkAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:49:11.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form.cs",
+              "DocumentMoniker": "D:\\Code\\winform-calculator\\winformCalculator.GUI\\Form.cs",
+              "RelativeDocumentMoniker": "winformCalculator.GUI\\Form.cs",
+              "ToolTip": "D:\\Code\\winform-calculator\\winformCalculator.GUI\\Form.cs",
+              "RelativeToolTip": "winformCalculator.GUI\\Form.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:48:28.72Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\Users\\junxi\\source\\repos\\winform-calculator\\winformCalculator\\winformCalculator.GUI\\Form.cs",
+              "DocumentMoniker": "D:\\Code\\winform-calculator\\winformCalculator.GUI\\Form.cs",
               "RelativeDocumentMoniker": "winformCalculator.GUI\\Form.cs",
-              "ToolTip": "C:\\Users\\junxi\\source\\repos\\winform-calculator\\winformCalculator\\winformCalculator.GUI\\Form.cs [\u8BBE\u8BA1]",
+              "ToolTip": "D:\\Code\\winform-calculator\\winformCalculator.GUI\\Form.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "winformCalculator.GUI\\Form.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T15:29:12.657Z",

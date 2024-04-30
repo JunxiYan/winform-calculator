@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\junxi\\source\\repos\\winform-calculator\\winformCalculator\\winformCalculator.GUI\\winformCalculator.GUI.csproj",
+      "projectUniqueName": "D:\\Code\\winform-calculator\\winformCalculator.GUI\\winformCalculator.GUI.csproj",
       "projectName": "winformCalculator.GUI",
-      "projectPath": "C:\\Users\\junxi\\source\\repos\\winform-calculator\\winformCalculator\\winformCalculator.GUI\\winformCalculator.GUI.csproj",
+      "projectPath": "D:\\Code\\winform-calculator\\winformCalculator.GUI\\winformCalculator.GUI.csproj",
       "packagesPath": "C:\\Users\\junxi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\junxi\\source\\repos\\winform-calculator\\winformCalculator\\winformCalculator.GUI\\obj\\",
+      "outputPath": "D:\\Code\\winform-calculator\\winformCalculator.GUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
