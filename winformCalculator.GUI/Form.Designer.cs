@@ -44,9 +44,11 @@ namespace winformCalculator.GUI
             buttonPlus = new Button();
             buttonPoint = new Button();
             buttonSolution = new Button();
-            textBox1 = new TextBox();
+            textBox = new TextBox();
             buttonDelete = new Button();
             buttonDivide = new Button();
+            buttonLeftparen = new Button();
+            buttonRightparen = new Button();
             SuspendLayout();
             // 
             // button1
@@ -58,6 +60,7 @@ namespace winformCalculator.GUI
             button1.TabIndex = 0;
             button1.Text = "1";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -67,6 +70,7 @@ namespace winformCalculator.GUI
             button2.TabIndex = 1;
             button2.Text = "2";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -76,6 +80,7 @@ namespace winformCalculator.GUI
             button3.TabIndex = 2;
             button3.Text = "3";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -85,6 +90,7 @@ namespace winformCalculator.GUI
             button4.TabIndex = 3;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -94,6 +100,7 @@ namespace winformCalculator.GUI
             button5.TabIndex = 4;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -103,6 +110,7 @@ namespace winformCalculator.GUI
             button6.TabIndex = 5;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -112,6 +120,7 @@ namespace winformCalculator.GUI
             button7.TabIndex = 6;
             button7.Text = "7";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -121,6 +130,7 @@ namespace winformCalculator.GUI
             button8.TabIndex = 7;
             button8.Text = "8";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -130,6 +140,7 @@ namespace winformCalculator.GUI
             button9.TabIndex = 8;
             button9.Text = "9";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button0
             // 
@@ -139,6 +150,7 @@ namespace winformCalculator.GUI
             button0.TabIndex = 9;
             button0.Text = "0";
             button0.UseVisualStyleBackColor = true;
+            button0.Click += button0_Click;
             // 
             // buttonMultipy
             // 
@@ -148,6 +160,7 @@ namespace winformCalculator.GUI
             buttonMultipy.TabIndex = 10;
             buttonMultipy.Text = "x";
             buttonMultipy.UseVisualStyleBackColor = true;
+            buttonMultipy.Click += buttonMultipy_Click;
             // 
             // buttonMinus
             // 
@@ -157,6 +170,7 @@ namespace winformCalculator.GUI
             buttonMinus.TabIndex = 11;
             buttonMinus.Text = "-";
             buttonMinus.UseVisualStyleBackColor = true;
+            buttonMinus.Click += buttonMinus_Click;
             // 
             // buttonPlus
             // 
@@ -166,6 +180,7 @@ namespace winformCalculator.GUI
             buttonPlus.TabIndex = 12;
             buttonPlus.Text = "+";
             buttonPlus.UseVisualStyleBackColor = true;
+            buttonPlus.Click += buttonPlus_Click;
             // 
             // buttonPoint
             // 
@@ -175,6 +190,7 @@ namespace winformCalculator.GUI
             buttonPoint.TabIndex = 13;
             buttonPoint.Text = ".";
             buttonPoint.UseVisualStyleBackColor = true;
+            buttonPoint.Click += buttonPoint_Click;
             // 
             // buttonSolution
             // 
@@ -184,13 +200,16 @@ namespace winformCalculator.GUI
             buttonSolution.TabIndex = 14;
             buttonSolution.Text = "=";
             buttonSolution.UseVisualStyleBackColor = true;
+            buttonSolution.Click += buttonSolution_Click;
             // 
-            // textBox1
+            // textBox
             // 
-            textBox1.Location = new Point(28, 12);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(416, 30);
-            textBox1.TabIndex = 15;
+            textBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBox.Location = new Point(28, 12);
+            textBox.Name = "textBox";
+            textBox.RightToLeft = RightToLeft.Yes;
+            textBox.Size = new Size(416, 30);
+            textBox.TabIndex = 15;
             // 
             // buttonDelete
             // 
@@ -200,6 +219,7 @@ namespace winformCalculator.GUI
             buttonDelete.TabIndex = 16;
             buttonDelete.Text = "Del";
             buttonDelete.UseVisualStyleBackColor = true;
+            buttonDelete.Click += buttonDelete_Click;
             // 
             // buttonDivide
             // 
@@ -209,6 +229,27 @@ namespace winformCalculator.GUI
             buttonDivide.TabIndex = 17;
             buttonDivide.Text = "/";
             buttonDivide.UseVisualStyleBackColor = true;
+            buttonDivide.Click += buttonDivide_Click;
+            // 
+            // buttonLeftparen
+            // 
+            buttonLeftparen.Location = new Point(134, 108);
+            buttonLeftparen.Name = "buttonLeftparen";
+            buttonLeftparen.Size = new Size(98, 100);
+            buttonLeftparen.TabIndex = 18;
+            buttonLeftparen.Text = "(";
+            buttonLeftparen.UseVisualStyleBackColor = true;
+            buttonLeftparen.Click += buttonLeftparen_Click;
+            // 
+            // buttonRightparen
+            // 
+            buttonRightparen.Location = new Point(238, 108);
+            buttonRightparen.Name = "buttonRightparen";
+            buttonRightparen.Size = new Size(98, 100);
+            buttonRightparen.TabIndex = 19;
+            buttonRightparen.Text = ")";
+            buttonRightparen.UseVisualStyleBackColor = true;
+            buttonRightparen.Click += buttonRightparen_Click;
             // 
             // Form
             // 
@@ -217,9 +258,11 @@ namespace winformCalculator.GUI
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(478, 644);
+            Controls.Add(buttonRightparen);
+            Controls.Add(buttonLeftparen);
             Controls.Add(buttonDivide);
             Controls.Add(buttonDelete);
-            Controls.Add(textBox1);
+            Controls.Add(textBox);
             Controls.Add(buttonSolution);
             Controls.Add(buttonPoint);
             Controls.Add(buttonPlus);
@@ -265,8 +308,10 @@ namespace winformCalculator.GUI
         private Button buttonPlus;
         private Button buttonPoint;
         private Button buttonSolution;
-        private TextBox textBox1;
+        private TextBox textBox;
         private Button buttonDelete;
         private Button buttonDivide;
+        private Button buttonLeftparen;
+        private Button buttonRightparen;
     }
 }
