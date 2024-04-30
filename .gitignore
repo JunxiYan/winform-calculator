@@ -1,2 +1,4 @@
 /winformCalculator.Core/bin/
 /winformCalculator.GUI/bin/
+/winformCalculator.Core/obj/
+/winformCalculator.GUI/obj/
