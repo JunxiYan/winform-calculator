@@ -9,10 +9,10 @@ namespace winformCalculator.Core
         string divide = "/";
 
         private double Plus(double x, double y) => x + y;
-        private double Minus(double x, double y) => x - y;
+        private double Minus(double x, double y) => y - x;
 
         private double Multiply(double x, double y) => x * y;
-        private double Divide(double x, double y) => x / y;
+        private double Divide(double x, double y) => y / x;
 
         public string Calculate(string expression)
         {
