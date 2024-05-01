@@ -207,7 +207,7 @@ namespace winformCalculator.GUI
             textBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBox.Location = new Point(28, 12);
             textBox.Name = "textBox";
-            textBox.RightToLeft = RightToLeft.Yes;
+            textBox.RightToLeft = RightToLeft.No;
             textBox.Size = new Size(416, 30);
             textBox.TabIndex = 15;
             // 

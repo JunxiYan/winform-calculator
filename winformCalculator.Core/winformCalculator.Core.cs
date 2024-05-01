@@ -1,13 +1,12 @@
-﻿namespace winformCalculator.Core
+﻿using System.Collections.Generic;
+using System;
+namespace winformCalculator.Core
 {
     public class CalculatorCore
-    {
-#pragma warning disable CS8618 // 在退出构造函数时，不可为 null 的字段必须包含非 null 值。请考虑声明为可以为 null。
-        public string Expression { get; set; }
-#pragma warning restore CS8618 // 在退出构造函数时，不可为 null 的字段必须包含非 null 值。请考虑声明为可以为 null。
-#pragma warning disable CS8618 // 在退出构造函数时，不可为 null 的字段必须包含非 null 值。请考虑声明为可以为 null。
-        public string Result { get; set; }
-#pragma warning restore CS8618 // 在退出构造函数时，不可为 null 的字段必须包含非 null 值。请考虑声明为可以为 null。
+    {   string plus = "+";
+        string minus = "-";
+        string multiply = "*";
+        string divide = "/";
 
         private double Plus(double x, double y) => x + y;
         private double Minus(double x, double y) => x - y;
@@ -17,8 +16,8 @@
 
         public string Calculate(string expression)
         {
-            Stack<char> Numberstack = new Stack<char>();
-            Stack<char> Operatorstack = new Stack<char>();
+            var Numberstack = new Stack<string>();
+            var Operatorstack = new Stack<char>();
 
             for (int i = 0; i < expression.Length; i++)
             {
@@ -30,7 +29,7 @@
                 {
                     while (Operatorstack.Peek() != '(')
                     {
-                        Numberstack.Push(Operatorstack.Pop());
+                        Numberstack.Push(Operatorstack.Pop().ToString());
                     }
                     Operatorstack.Pop();
                 }
@@ -38,7 +37,7 @@
                 {
                     while (Operatorstack.Count > 0 && Operatorstack.Peek() != '(')
                     {
-                        Numberstack.Push(Operatorstack.Pop());
+                        Numberstack.Push(Operatorstack.Pop().ToString());
                     }
                     Operatorstack.Push(expression[i]);
                 }
@@ -46,57 +45,64 @@
                 {
                     while (Operatorstack.Count > 0 && (Operatorstack.Peek() == '*' || Operatorstack.Peek() == '/'))
                     {
-                        Numberstack.Push(Operatorstack.Pop());
+                        Numberstack.Push(Operatorstack.Pop().ToString());
                     }
                     Operatorstack.Push(expression[i]);
                 }
+
                 else
                 {
-                    Numberstack.Push(expression[i]);
+                    int length = 0;
+                    while (i + length < expression.Length
+                            && (expression[i + length] >= '0'
+                            && expression[i + length] <= '9'
+                            || expression[i + length] == '.'))
+                    { length++; }
+                    Numberstack.Push(expression.Substring(i, length));
+                    i += length - 1;
                 }
+
             }
             while (Operatorstack.Count > 0)
             {
-                Numberstack.Push(Operatorstack.Pop());
+                Numberstack.Push(Operatorstack.Pop().ToString());
             }
 
-
-            char[] array = Numberstack.ToArray();
-            Array.Reverse(array);
-
-            var resultStack = new Stack<char>();
-            foreach (var item in array)
-            {
-                if (item == '+' || item == '-' || item == '*' || item == '/')
+            var resultStack = new Stack<string>();
+ 
+            for (int i =0;i<=Numberstack.Count;i++)
+            {   var item = Numberstack.Pop().ToString();
+                
+                if (item == plus || item == minus || item == multiply || item == divide)
                 {
-                    double x = double.Parse(resultStack.Pop().ToString());
-                    double y = double.Parse(resultStack.Pop().ToString());
-                    double result = 0;
-                    if (item == '+')
+                    double x = double.Parse(Numberstack.Pop());
+                    double y = double.Parse(Numberstack.Pop());
+                    
+                    if (item == plus)
                     {
-                        result = Plus(x, y);
+                       resultStack.Push(Plus(x, y).ToString());
                     }
-                    else if (item == '-')
+                    else if (item == minus)
                     {
-                        result = Minus(x, y);
+                        resultStack.Push(Minus(x, y).ToString());
                     }
-                    else if (item == '*')
+                    else if (item == multiply)
                     {
-                        result = Multiply(x, y);
+                        resultStack.Push(Multiply(x, y).ToString());
                     }
-                    else if (item == '/')
+                    else if (item == divide)
                     {
-                        result = Divide(x, y);
+                        resultStack.Push(Divide(x, y).ToString());
                     }
-                    resultStack.Push(result.ToString()[0]);
+                    
                 }
                 else
                 {
-                    resultStack.Push(item);
+                    Numberstack.Push(item);
                 }
             }
 
-            return resultStack.Pop().ToString();
+            return resultStack.Pop();
 
 
         }
